@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -12,41 +11,44 @@
     <title>Projeto Playsation Store</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="img/logo.png" alt="Logo Da Pagína">
+    <div class="container">
+        <div class="navegar">
+            <img class="logo" src="img/logo.png" alt="Logo Da Pagína">
             <nav>
                 <ul>
-                    <li><a>Consoles</li>
-                    <li><a>Acessorios</li>
-                    <li><a>Controles</li>
-                    <li><a>Outros</li>   
+                    <li><a class="link">Consoles</li>
+                    <li><a class="link">Acessorios</li>
+                    <li><a class="link">Controles</li>
+                    <li><a class="link">Outros</li>   
                 </ul>
             </nav>
         </div>
-    </header>
+    
 
-    <main>
-        <div>
-            <h2> PS5 Dualshock</h2>
-            <h3>Wireless Controller for PlayStation</h3>
-            <p>Conteudo Original</p>
-            <h4>R$ 222,50</h4>
-            <button>Comprar Agora</button>
-        </div>
-        <div>
-            <img src="img/controller.png" alt="Controle PS5">
-            <div></div>
-            <button>
-                <img src="img/add.png" alt="Adicionar ao Carrinho">
-            </button>
-        </div>
-    </main>
+        <div class="row">
+            <div class="coluna1">
+                <h2> PS5 Dualshock</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Conteudo Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar Agora</button>
+            </div>
 
-    <footer>
-        <img src="img/fb.png" alt="Facebook">
-        <img src="img/ig.png" alt="Instagram">
-        <img src="img/tw.png" alt="Twiter">
-    </footer>
+            <div class="coluna2"> 
+                <img class="controler" src="img/controller.png" alt="Controle PS5">
+                <div class="color-box"></div>
+                <button class="add-carrinho">
+                    <img src="img/add.png" alt="Adicionar ao Carrinho">
+                </button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/fb.png" alt="Facebook">
+            <img src="img/ig.png" alt="Instagram">
+            <img src="img/tw.png" alt="Twiter">
+        </div>
+
+    </div> 
 </body>
 </html>
