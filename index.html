@@ -15,13 +15,14 @@
         <div class="navegar">
             <img class="logo" src="img/logo.png" alt="Logo Da Pagína">
             <nav>
-                <ul>
-                    <li><a class="link">Consoles</li>
-                    <li><a class="link">Acessorios</li>
-                    <li><a class="link">Controles</li>
-                    <li><a class="link">Outros</li>   
+                <ul id="menu">
+                    <li class="nav-li"><a class="link">Consoles</li>
+                    <li class="nav-li"><a class="link">Acessorios</li>
+                    <li class="nav-li"><a class="link">Controles</li>
+                    <li class="nav-li"><a class="link">Outros</li>   
                 </ul>
             </nav>
+            <img src="img/menu.png" alt="botao do menu"class="menu-icon" onclick="showmenu()">
         </div>
     
 
@@ -51,4 +52,16 @@
 
     </div> 
 </body>
+<script>
+    const menulista = document.getElementById("menu")
+    menulista.style.maxHeight = "0px"
+    
+    function showmenu(){
+        if(menulista.style.maxHeight == "0px"){
+            menulista.style.maxHeight = "120px"
+        }else{
+            menulista.style.maxHeight = "0px"
+        }
+    }
+</script>
 </html>
